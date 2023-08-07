@@ -1,0 +1,112 @@
+:root {
+  --five-minutes-background: #303F9F;
+  --five-minutes-text: #0f153f;
+  --ten-minutes-background: #FFD700;
+  --ten-minutes-text: #867200;
+  --fifteen-minutes-background: #F9A825;
+  --fifteen-minutes-text: #69470f;
+  --twenty-minutes-background: #FF8000;
+  --twenty-minutes-text: #6e3700;
+  --thirty-minutes-background: #FF0000;
+  --thirty-minutes-text: #690000;
+
+  --original-title: #ffffff;
+  --original-text: #ffffff4d;
+}
+
+.list_dados {
+  transform-style: preserve-3d;
+}
+
+.atend_aguard.expired {
+  position: relative;
+  animation: pulse 1s ease-in-out infinite;
+  border-radius: 10px;
+ 
+ 
+  transform-origin: center;
+  margin: 5px 20px;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.atend_aguard.five-minutes.expired:hover, 
+.atend_aguard.selected.five-minutes.expired,
+.atend_aguard.ten-minutes.expired:hover, 
+.atend_aguard.selected.ten-minutes.expired,
+.atend_aguard.fifteen-minutes.expired:hover, 
+.atend_aguard.selected.fifteen-minutes.expired,
+.atend_aguard.twenty-minutes.expired:hover, 
+.atend_aguard.selected.twenty-minutes.expired,
+.atend_aguard.thirty-minutes.expired:hover, 
+.atend_aguard.selected.thirty-minutes.expired {
+  color: var(--original-title) !important;
+}
+
+.atend_aguard.five-minutes.expired:hover .corpo .descricao, 
+.atend_aguard.five-minutes.expired:hover .corpo .data_hora_ultima_msg, 
+.atend_aguard.selected.five-minutes.expired .corpo .descricao, 
+.atend_aguard.selected.five-minutes.expired .corpo .data_hora_ultima_msg,
+.atend_aguard.ten-minutes.expired:hover .corpo .descricao, 
+.atend_aguard.ten-minutes.expired:hover .corpo .data_hora_ultima_msg, 
+.atend_aguard.selected.ten-minutes.expired .corpo .descricao, 
+.atend_aguard.selected.ten-minutes.expired .corpo .data_hora_ultima_msg,
+.atend_aguard.fifteen-minutes.expired:hover .corpo .descricao, 
+.atend_aguard.fifteen-minutes.expired:hover .corpo .data_hora_ultima_msg, 
+.atend_aguard.selected.fifteen-minutes.expired .corpo .descricao, 
+.atend_aguard.selected.fifteen-minutes.expired .corpo .data_hora_ultima_msg,
+.atend_aguard.twenty-minutes.expired:hover .corpo .descricao, 
+.atend_aguard.twenty-minutes.expired:hover .corpo .data_hora_ultima_msg, 
+.atend_aguard.selected.twenty-minutes.expired .corpo .descricao, 
+.atend_aguard.selected.twenty-minutes.expired .corpo .data_hora_ultima_msg,
+.atend_aguard.thirty-minutes.expired:hover .corpo .descricao, 
+.atend_aguard.thirty-minutes.expired:hover .corpo .data_hora_ultima_msg, 
+.atend_aguard.selected.thirty-minutes.expired .corpo .descricao, 
+.atend_aguard.selected.thirty-minutes.expired .corpo .data_hora_ultima_msg {
+  color: var(--original-text) !important;
+}
+
+.atend_aguard.five-minutes.expired {
+  background: var(--five-minutes-background);
+  color: var(--five-minutes-text);
+}
+.atend_aguard.five-minutes.expired .corpo .descricao, 
+.atend_aguard.five-minutes.expired .corpo .data_hora_ultima_msg {
+  color: var(--five-minutes-text) !important;
+}
+
+.atend_aguard.ten-minutes.expired {
+  background: var(--ten-minutes-background);
+  color: var(--ten-minutes-text);
+}
+.atend_aguard.ten-minutes.expired .corpo .descricao, 
+.atend_aguard.ten-minutes.expired .corpo .data_hora_ultima_msg {
+  color: var(--ten-minutes-text) !important;
+}
+
+.atend_aguard.fifteen-minutes.expired {
+  background: var(--fifteen-minutes-background);
+  color: var(--fifteen-minutes-text);
+}
+.atend_aguard.fifteen-minutes.expired .corpo .descricao, 
+.atend_aguard.fifteen-minutes.expired .corpo .data_hora_ultima_msg {
+  color: var(--fifteen-minutes-text) !important;
+}
+
+.atend_aguard.twenty-minutes.expired {
+  background: var(--twenty-minutes-background);
+  color: var(--twenty-minutes-text);
+}
+.atend_aguard.twenty-minutes.expired .corpo .descricao, 
+.atend_aguard.twenty-minutes.expired .corpo .data_hora_ultima_msg {
+  color: var(--twenty-minutes-text) !important;
+}
+
+.atend_aguard.thirty-minutes.expired {
+  background: var(--thirty-minutes-background);
+  color: var(--thirty-minutes-text);
+}
+.atend_aguard.thirty-minutes.expired .corpo .descricao, 
+.atend_aguard.thirty-minutes.expired .corpo .data_hora_ultima_msg {
+  color: var(--thirty-minutes-text) !important;
+}

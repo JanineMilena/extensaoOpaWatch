@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Opa!Watch",
+  "short_name": "Opa!Watch",
+  "description": "Extensão que gera uma notificação push indicando quando existem atendimentos esperando a mais de 10 minutos na fila.",
+  "icons": { 
+    "128": "/images/warning.png" 
+  },
+  "action": {},
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["scripts/content_script.js"],
+    "css": ["style/expired.css"]
+  }],
+  "permissions": [
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://suporte.ixcsoft.com.br/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["/images/warning.png"], 
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  }
+}
