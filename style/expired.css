@@ -20,14 +20,25 @@
 
 .atend_aguard.expired {
   position: relative;
-  animation: pulse 1s ease-in-out infinite;
+  animation: shake 1s ease-in-out infinite; /* Definir a animação "shake" */
+  animation-delay: 5s;
   border-radius: 10px;
- 
- 
   transform-origin: center;
   margin: 5px 20px;
   backface-visibility: hidden;
   transform: translateZ(0);
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px); /* Ajustar a quantidade de deslocamento horizontal */
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px); /* Ajustar a quantidade de deslocamento horizontal */
+  }
 }
 
 .atend_aguard.five-minutes.expired:hover, 
