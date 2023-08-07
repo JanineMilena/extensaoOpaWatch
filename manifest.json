@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "Opa!Watch",
   "short_name": "Opa!Watch",
-  "description": "Extensão que gera uma notificação push indicando quando existem atendimentos esperando a mais de 10 minutos na fila.",
+  "description": "Opa!Watch é uma extensão que gera notificações push para atendimentos na fila por mais de 10 minutos e altera sua aparência de acordo com o tempo de espera.",
   "icons": { 
     "128": "/images/warning.png" 
   },
